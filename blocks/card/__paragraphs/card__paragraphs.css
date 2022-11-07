@@ -10,7 +10,7 @@
   }
 }
 
-@media screen and (max-width :345px) {
+@media screen and (max-width: 345px) {
   .card__paragraphs {
     max-width: 288px;
   }
