@@ -1,9 +1,38 @@
 .card__title {
-  margin: 0;
+  display: inline;
+  margin: 0 auto;
   font-style: normal;
   font-weight: 900;
   font-size: 72px;
   line-height: 76px;
-  padding: 0 40px 48px 0;
   max-width: 460px;
+  width: 100%;
+}
+
+@media screen and (max-width: 1279px) {
+  .card__title {
+    max-width: 440px;
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .card__title {
+    font-size: 42px;
+    line-height: 46px;
+    max-width: 330px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .card__title {
+    font-size: 32px;
+    line-height: 35px;
+    max-width: 320px;
+  }
+}
+
+@media screen and (max-width: 345px) {
+  .card__title {
+    max-width: 288px;
+  }
 }

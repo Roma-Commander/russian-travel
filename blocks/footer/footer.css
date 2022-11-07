@@ -1,35 +1,37 @@
-.header {
+.footer {
   display: flex;
-  justify-content: space-between;
-  padding: 28px 0 0 0;
   width: 92.5%;
   max-width: 1184px;
   min-width: 288px;
-  box-sizing: border-box;
+  justify-content: space-between;
   margin: 0 auto;
+  padding: 92px 0 24px 0;
+  color: white;
 }
 
 @media screen and (max-width: 1024px) {
-  .header {
+  .footer {
     max-width: 928px;
+    padding: 88px 0 0 0;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .header {
+  .footer {
     width: 94%;
     max-width: 720px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .header {
-    padding: 16px 0 0 0;
+  .footer {
+    flex-direction: column;
+    padding: 64px 0 0 0;
   }
 }
 
 @media screen and (max-width: 320px) {
-  .header {
+  .footer {
     max-width: 288px;
   }
 }

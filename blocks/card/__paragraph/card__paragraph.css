@@ -1,6 +1,6 @@
 .card__paragraph {
   margin: 0;
-  padding: 0 0 26px 0;
+  padding: 0 0 25px 0;
   max-width: 484px;
   font-style: normal;
   font-weight: 400;
@@ -8,6 +8,12 @@
   line-height: 163%;
 }
 
-.card__text:last-child {
+.card__paragraph:last-child {
   padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .card__paragraph {
+    font-size: 16px;
+  }
 }

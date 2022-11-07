@@ -2,3 +2,16 @@
   display: flex;
   flex-direction: column;
 }
+
+@media screen and (max-width: 767px) {
+  .card__paragraphs {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width :345px) {
+  .card__paragraphs {
+    max-width: 288px;
+  }
+}
