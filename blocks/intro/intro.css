@@ -28,7 +28,6 @@
 @media screen and (max-width: 767px) {
   .intro {
     padding: 64px 21px 0 21px;
-    box-sizing: border-box;
   }
 }
 

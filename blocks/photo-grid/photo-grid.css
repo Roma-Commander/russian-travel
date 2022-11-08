@@ -22,7 +22,7 @@
   .photo-grid {
     max-width: 720px;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+
     gap: 16px;
     padding: 88px 0 0 0;
   }
@@ -32,7 +32,6 @@
   .photo-grid {
     max-width: 288px;
     grid-template-columns: 1fr;
-    grid-template-rows: auto;
     gap: 12px;
     padding: 64px 0 0 0;
   }

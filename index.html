@@ -5,8 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./vendor/normalize.css">
-  <link rel="stylesheet" href="./vendor/fonts.css">
   <link rel="stylesheet" href="./pages/index.css">
   <title>Путешествие по России</title>
 </head>
@@ -17,8 +15,8 @@
     <header class="header">
       <img src="./images/header-logo.svg" alt="Контур карты России, справа слово Россия" class="logo">
       <div class="header__links">
-        <a href="#" class="header__link header__link_active_ru">Ru</a>
-        <a href="#" class="header__link header__link_active_en">En</a>
+        <a href="#" class="header__link header__link_active">Ru</a>
+        <a href="#" class="header__link">En</a>
       </div>
     </header>
 
@@ -27,8 +25,10 @@
       <section class="lead">
         <h1 class="lead__title">Путешествия по России</h1>
         <h2 class="lead__subtitle">Настоящая страна не в выпусках новостей, а здесь.</h2>
-        <img class="lead__image" src="./images/lead-polka.jpg" alt="Девушка лежащая на полке в вагоне">
-        <p class="lead__caption">Ваша полка — верхняя</p>
+        <figure class="lead__figure">
+          <img class="lead__image" src="./images/lead-polka.jpg" alt="Девушка лежащая на полке в вагоне">
+          <figcaption class="lead__caption">Ваша полка — верхняя</figcaption>
+        </figure>
       </section>
 
       <!--section intro-->
@@ -48,11 +48,11 @@
           отпуска.
         </p>
         <ul class="intro__list">
-          <li>Часовых поясов 11</li>
-          <li>Объектов природного наследия ЮНЕСКО 12</li>
-          <li>Объектов культурного наследия ЮНЕСКО 16</li>
-          <li>Природных заповедников 105</li>
-          <li>Аэропортов 241</li>
+          <li>Часовых поясов <span class="intro__value">11</span></li>
+          <li>Объектов природного наследия ЮНЕСКО <span class="intro__value">12</span></li>
+          <li>Объектов культурного наследия ЮНЕСКО <span class="intro__value">16</span></li>
+          <li>Природных заповедников <span class="intro__value">105</span></li>
+          <li>Аэропортов <span class="intro__value">241</span></li>
         </ul>
       </section>
 
@@ -81,7 +81,7 @@
       <section class="places">
 
         <!--card kosa-->
-        <div class="card">
+        <article class="card">
           <h2 class="card__title">Куршская коса</h2>
           <div class="card__website">
             <h3 class="card__title-link">URL</h3>
@@ -103,10 +103,10 @@
               природы и&nbsp;запах стального, прохладного моря.
             </p>
           </div>
-        </div>
+        </article>
 
         <!--card kolsky-->
-        <div class="card">
+        <article class="card">
           <h2 class="card__title">Кольский</h2>
           <div class="card__website">
             <h3 class="card__title-link">URL</h3>
@@ -131,10 +131,10 @@
               в&nbsp;Мурманск.
             </p>
           </div>
-        </div>
+        </article>
 
         <!--card altai-->
-        <div class="card">
+        <article class="card">
           <h2 class="card__title">Алтай</h2>
           <div class="card__website">
             <h3 class="card__title-link">URL</h3>
@@ -158,10 +158,10 @@
               косули. И&nbsp;знаменитые манулы&nbsp;&mdash; тоже обитатели Алтайского края.
             </p>
           </div>
-        </div>
+        </article>
 
         <!--card baikal-->
-        <div class="card">
+        <article class="card">
           <h2 class="card__title">Зимний Байкал</h2>
           <div class="card__website">
             <h3 class="card__title-link">URL</h3>
@@ -184,10 +184,10 @@
               фестивале &laquo;Байкальская миля&raquo; был поставлен мировой рекорд&nbsp;&mdash; 197.011&nbsp;км/ч.
             </p>
           </div>
-        </div>
+        </article>
 
         <!--card karelia-->
-        <div class="card">
+        <article class="card">
           <h2 class="card__title">Карелия</h2>
           <div class="card__website">
             <h3 class="card__title-link">URL</h3>
@@ -208,7 +208,7 @@
               в&nbsp;паре метров от&nbsp;земли помечены медвежьими когтями. Чтобы все знали, кто тут хозяин.
             </p>
           </div>
-        </div>
+        </article>
       </section>
 
       <!--Section cover-->
@@ -219,22 +219,20 @@
             электричках.</p>
         </a>
       </section>
-
-      <!--footer-->
-      <footer class="footer">
-        <div class="footer__links">
-          <a href="https://yandex.ru/maps" class="link footer__link" target="_blank">Карты</a>
-          <a href="https://yandex.ru/pogoda" class="link footer__link" target="_blank">Погода</a>
-          <a href="https://rasp.yandex.ru" class="link footer__link" target="_blank">Расписание</a>
-          <a href="https://calendar.yandex.ru" class="link footer__link" target="_blank">Календарь</a>
-          <a href="https://travel.yandex.ru" class="link footer__link" target="_blank">Путешествия</a>
-        </div>
-        <p class="footer__author">&copy; 2022. Roma Commander</p>
-      </footer>
-
     </main>
-  </div>
 
+    <!--footer-->
+    <footer class="footer">
+      <nav class="footer__links">
+        <a href="https://yandex.ru/maps" class="link footer__link" target="_blank">Карты</a>
+        <a href="https://yandex.ru/pogoda" class="link footer__link" target="_blank">Погода</a>
+        <a href="https://rasp.yandex.ru" class="link footer__link" target="_blank">Расписание</a>
+        <a href="https://calendar.yandex.ru" class="link footer__link" target="_blank">Календарь</a>
+        <a href="https://travel.yandex.ru" class="link footer__link" target="_blank">Путешествия</a>
+      </nav>
+      <p class="footer__author">&copy; 2022. Roma Commander</p>
+    </footer>
+  </div>
 </body>
 
 </html>
